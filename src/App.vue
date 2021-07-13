@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="chartprop">
-      <CommitChart />
+      <FermiDistribution />
     </div>
     <div class="chartprop">
       <FunctionChart />
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import CommitChart from "./charts/CommitChart";
 import FunctionChart from "./charts/FunctionChart";
+import FermiDistribution from "./charts/FermiDistribution";
 
 export default {
   name: "App",
-  components: { CommitChart, FunctionChart },
+  components: { FermiDistribution, FunctionChart },
 };
 </script>
 
