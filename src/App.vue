@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <CommitChart />
+    <div class="chartprop">
+      <CommitChart />
+    </div>
+    <div class="chartprop">
+      <FunctionChart />
+    </div>
   </div>
 </template>
 
 <script>
 import CommitChart from "./charts/CommitChart";
+import FunctionChart from "./charts/FunctionChart";
 
 export default {
   name: "App",
-  components: { CommitChart },
+  components: { CommitChart, FunctionChart },
 };
 </script>
 
@@ -21,5 +27,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 254px;
+}
+.chartprop {
+  max-width: 700px;
+  max-height: 500px;
 }
 </style>
