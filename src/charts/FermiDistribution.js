@@ -56,7 +56,7 @@ function linspace(a,b,n) {
         fill: false
       },
       {
-        label: "T= 600",
+        label: "T= 600K",
         function:  (x)=> { 
           let kt_600 = (600/300)*kT
           return (1 / (1 + Math.exp(x / kt_600)));
