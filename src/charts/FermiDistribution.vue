@@ -24,7 +24,7 @@ export default {
   },
   data: () => {
     return {
-      val: 300, //default value
+      val: 300, //default value for temp
       datacollection: null,
       options: null,
     };
