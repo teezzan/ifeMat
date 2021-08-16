@@ -6,16 +6,24 @@
     <div class="chartprop">
       <FunctionChart />
     </div>
+    <div class="chartprop">
+      <FunctionSlider />
+    </div>
   </div>
 </template>
 
 <script>
 import FunctionChart from "./charts/FunctionChart";
 import FermiDistribution from "./charts/FermiDistribution";
+import FunctionSlider from "./charts/FunctionSlider.vue";
 
 export default {
   name: "App",
-  components: { FermiDistribution, FunctionChart },
+  components: { 
+    FermiDistribution, 
+    FunctionChart, 
+    FunctionSlider 
+    },
 };
 </script>
 
