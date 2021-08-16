@@ -1,28 +1,23 @@
 <template>
   <div id="app">
     <div class="chartprop">
-      <FermiDistribution />
+      <FermiDistribution :max="600" :min="100"/>
     </div>
     <div class="chartprop">
       <FunctionChart />
-    </div>
-    <div class="chartprop">
-      <FunctionSlider />
     </div>
   </div>
 </template>
 
 <script>
-import FunctionChart from "./charts/FunctionChart";
-import FermiDistribution from "./charts/FermiDistribution";
-import FunctionSlider from "./charts/FunctionSlider.vue";
+import FunctionChart from "./chartTemplates/FunctionChart";
+import FermiDistribution from "./charts/FermiDistribution.vue";
 
 export default {
   name: "App",
   components: { 
     FermiDistribution, 
     FunctionChart, 
-    FunctionSlider 
     },
 };
 </script>
