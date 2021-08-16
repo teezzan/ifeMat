@@ -1,6 +1,6 @@
 <template>
   <div>
-    <FunctionSlider :chart-data="datacollection" />
+    <FunctionSlider :chart-data="datacollection" :options="options" />
     <input
       type="range"
       :min="this.min"
@@ -26,6 +26,7 @@ export default {
     return {
       val: 300, //default value
       datacollection: null,
+      options: null,
     };
   },
   mounted() {
@@ -59,7 +60,7 @@ export default {
         labels: xAxis,
         datasets: [
           {
-            label: "Fermi Distribution",
+            label: `Fermi Distribution at ${this.val}K`,
             backgroundColor: "rgba(75, 192, 192, 1)",
             data: this.getDataFromFunction(xAxis, (x) => {
               let kT = 0.00257; //setting kT constant
@@ -68,6 +69,18 @@ export default {
             }),
           },
         ],
+      };
+      this.options = {
+        scaleFontSize: 0,
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                display: false,
+              },
+            },
+          ],
+        },
       };
     },
   },
