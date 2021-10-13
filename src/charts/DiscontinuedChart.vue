@@ -69,11 +69,11 @@ export default {
             label: `Discontinued Distribution at ${this.val}K`,
             backgroundColor: "rgba(75, 192, 192, 1)",
             data: this.getDataFromFunction([
-              this.linspace(-0.03, 0.03, 300),
+              xAxis,
               (x) => {
                 return x * x;
               },
-              this.linspace(0.05, 0.07, 300),
+              xAxis2,
               (x) => {
                 return x * x;
               },
