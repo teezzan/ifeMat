@@ -59,8 +59,8 @@ export default {
       return output;
     },
     fillData() {
-      let xAxis = this.linspace(-0.03, 0.03, 300);
-      let xAxis2 = this.linspace(0.05, 0.07, 300);
+      let xAxis = this.linspace(-5, -0.01, 300);
+      let xAxis2 = this.linspace(0.01, 9, 300);
 
       this.datacollection = {
         labels: [...xAxis, ...xAxis2],
@@ -71,11 +71,11 @@ export default {
             data: this.getDataFromFunction([
               xAxis,
               (x) => {
-                return x * x;
+                return -2 * x + 6;
               },
               xAxis2,
               (x) => {
-                return x * x;
+                return -4 * x + 6;
               },
             ]),
           },

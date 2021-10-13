@@ -12,12 +12,16 @@
     <div class="chartprop">
       <OtherChart />
     </div>
+    <div class="chartprop">
+      <DiscontinuedChart />
+    </div>
   </div>
 </template>
 
 <script>
 import FunctionChart from "../../chartTemplates/FunctionChart";
 import FermiDistribution from "../../charts/FermiDistribution.vue";
+import DiscontinuedChart from "../../charts/DiscontinuedChart.vue";
 import Dos from "../../DOSchart/Dos.vue";
 import OtherChart from "../../DOSchart/OtherChart";
 export default {
@@ -25,6 +29,7 @@ export default {
   components: {
     FermiDistribution,
     FunctionChart,
+    DiscontinuedChart,
     Dos,
     OtherChart,
   },
