@@ -9,6 +9,12 @@
     <div class="chartprop">
       <Dos />
     </div>
+    <div class = "chartprop">
+      <carrierconc />
+    </div>
+    <div class = "chartprop">
+      <EnergyGap />
+    </div>
     <div class="chartprop">
       <OtherChart />
     </div>
@@ -22,6 +28,8 @@
 import FunctionChart from "../../chartTemplates/FunctionChart";
 import FermiDistribution from "../../charts/FermiDistribution.vue";
 import DiscontinuedChart from "../../charts/DiscontinuedChart.vue";
+import carrierconc from "../../charts/carrierconc.vue";
+import EnergyGap from "../../charts/EnergyGap.vue";
 import Dos from "../../DOSchart/Dos.vue";
 import OtherChart from "../../DOSchart/OtherChart";
 export default {
@@ -31,6 +39,8 @@ export default {
     FunctionChart,
     DiscontinuedChart,
     Dos,
+    carrierconc,
+    EnergyGap,
     OtherChart,
   },
 };
