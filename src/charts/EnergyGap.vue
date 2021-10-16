@@ -66,10 +66,13 @@ export default {
               let h = 6.626 * 10**-34;
               let Me = 9.1095 * 10**-31;
               let q = 1.60219 * 10 **-19;
-              let n = 1
-              //let Nc = 2.8 * 10 **19; //setting kT constant
+              let n1 = 1;
+              let n2 = 2;
+              let E1 = (n1**2 * h**2)/(8*Me*x**2 *q);
+              let E2 = n2 ** 2;
               
-              return (n**2 * h**2)/(8*Me*x**2 *q); //equation for fetting Fermi probability
+              
+              return E2 - E1; //equation for fetting Fermi probability
             }),
           },
         ],

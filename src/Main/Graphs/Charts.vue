@@ -21,6 +21,13 @@
     <div class="chartprop">
       <DiscontinuedChart />
     </div>
+   
+    <div class="chartprop">
+      <PN_Electric_Field />
+    </div>
+    <div class="chartprop">
+      <PN_Electric_Potential />
+    </div>
   </div>
 </template>
 
@@ -31,6 +38,9 @@ import DiscontinuedChart from "../../charts/DiscontinuedChart.vue";
 import carrierconc from "../../charts/carrierconc.vue";
 import EnergyGap from "../../charts/EnergyGap.vue";
 import Dos from "../../DOSchart/Dos.vue";
+//import PN_Charge_Density_Chart from "../../charts/PN_Charge_Density_Chart.vue"
+import PN_Electric_Field from "../../charts/PN_Electric_Field.vue"
+import PN_Electric_Potential from "../../charts/PN_Electric_Potential.vue"
 import OtherChart from "../../DOSchart/OtherChart";
 export default {
   name: "Charts",
@@ -41,6 +51,9 @@ export default {
     Dos,
     carrierconc,
     EnergyGap,
+    PN_Electric_Field,
+    PN_Electric_Potential,
+    //PN_Charge_Density_Chart,
     OtherChart,
   },
 };
