@@ -9,11 +9,24 @@
     <div class="chartprop">
       <Dos />
     </div>
+    <div class = "chartprop">
+      <carrierconc />
+    </div>
+    <div class = "chartprop">
+      <EnergyGap />
+    </div>
     <div class="chartprop">
       <OtherChart />
     </div>
     <div class="chartprop">
       <DiscontinuedChart />
+    </div>
+   
+    <div class="chartprop">
+      <PN_Electric_Field />
+    </div>
+    <div class="chartprop">
+      <PN_Electric_Potential />
     </div>
   </div>
 </template>
@@ -22,7 +35,12 @@
 import FunctionChart from "../../chartTemplates/FunctionChart";
 import FermiDistribution from "../../charts/FermiDistribution.vue";
 import DiscontinuedChart from "../../charts/DiscontinuedChart.vue";
+import carrierconc from "../../charts/carrierconc.vue";
+import EnergyGap from "../../charts/EnergyGap.vue";
 import Dos from "../../DOSchart/Dos.vue";
+//import PN_Charge_Density_Chart from "../../charts/PN_Charge_Density_Chart.vue"
+import PN_Electric_Field from "../../charts/PN_Electric_Field.vue"
+import PN_Electric_Potential from "../../charts/PN_Electric_Potential.vue"
 import OtherChart from "../../DOSchart/OtherChart";
 export default {
   name: "Charts",
@@ -31,6 +49,11 @@ export default {
     FunctionChart,
     DiscontinuedChart,
     Dos,
+    carrierconc,
+    EnergyGap,
+    PN_Electric_Field,
+    PN_Electric_Potential,
+    //PN_Charge_Density_Chart,
     OtherChart,
   },
 };
