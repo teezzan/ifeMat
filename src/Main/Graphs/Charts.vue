@@ -22,6 +22,10 @@
 import FunctionChart from "../../chartTemplates/FunctionChart";
 import FermiDistribution from "../../charts/FermiDistribution.vue";
 import DiscontinuedChart from "../../charts/DiscontinuedChart.vue";
+
+import Capacitance_dueTo_PlateSeparation from "../../charts/Capacitance_dueTo_PlateSeparation.vue";
+import SingleCrystal_BandGapvsCriticalWavelength from "../../charts/SingleCrystal_BandGapvsCriticalWavelength.vue";
+
 import Dos from "../../DOSchart/Dos.vue";
 import OtherChart from "../../DOSchart/OtherChart";
 export default {
@@ -32,6 +36,9 @@ export default {
     DiscontinuedChart,
     Dos,
     OtherChart,
+
+    Capacitance_dueTo_PlateSeparation,
+    SingleCrystal_BandGapvsCriticalWavelength,
   },
 };
 </script>
